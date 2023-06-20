@@ -78,7 +78,7 @@
       </div>
 
       <!-- mobile menu -->
-       <div class="mb-2 " id="burger">
+       <div class="mb-2 lg:hidden " id="burger">
         <div class="bg-white h-1 w-6 my-1 rounded-md " id="line1"></div>
         <div class="bg-white h-1 w-6 my-1 rounded-md " id="line2"></div>
         <div class="bg-white h-1 w-6 my-1 rounded-md " id="line3"></div>
@@ -139,47 +139,51 @@
 
       <!-- services -->
       <section class="my-10 py-5 lg:px-24">
-        <p class="text-center text-3xl font-bold my-5">Services</p>
+        <p class="text-center text-5xl font-extrabold my-10">Services</p>
         <div
-          class="flex flex-wrap gap-10 justify-evenly text-lg text-primary font-bold lg:justify-center lg:gap-24"
+          class="flex flex-wrap gap-10 justify-evenly  text-primary  lg:justify-center lg:gap-24"
         >
-          <div
-            class="bg-white w-60 h-52 rounded-2xl flex flex-col items-center justify-center gap-5 hover:shadow-xl hover:shadow-[#ffb600] lg:h-64 lg:w-96"
-          >
+        <div
+        class="bg-white w-72 h-72  rounded-2xl flex flex-col items-center justify-center gap-5 hover:shadow-xl hover:shadow-[#ffb600] lg:h-96 lg:w-96 "
+      >
+          <div class="bg-[#8ddbbbf5] rounded-lg lg:w-72 mx-auto">
             <img
-              src="./public/images/old-man-img.png"
+              src="./public/images/clinictreatimg.png"
               alt="old man exercise"
-              class="h-28 lg:h-36"
+              class="h-44 lg:h-56"
             />
-            <p>Clinic Treatment</p>
+          </div>
+            <p class="font-extrabold text-2xl">Clinic Treatment</p>
           </div>
 
           <div
-            class="bg-white w-60 h-52 rounded-2xl flex flex-col items-center justify-center gap-5 hover:shadow-xl hover:shadow-[#ffb600] lg:h-64 lg:w-96"
+            class="bg-white w-72 h-72  rounded-2xl flex flex-col items-center justify-center gap-5 hover:shadow-xl hover:shadow-[#ffb600] lg:h-96 lg:w-96 "
           >
+          <div class="bg-[#8ddbbbf5] rounded-lg lg:w-72 mx-auto">
             <img
-              src="./public/images/home-visit-img.png"
+              src="./public/images/hero-img-mobile-removebg-preview.png"
               alt="old man exercise"
-              class="h-28 lg:h-36"
+              class="h-44 lg:h-56"
             />
-            <p>Home Visit</p>
+          </div>
+            <p class="font-extrabold text-2xl">Home Visit</p>
           </div>
         </div>
       </section>
 
       <!-- what we treat section -->
       <section class="my-10 py-5 lg:px-24">
-        <p class="text-center text-3xl font-bold my-5">What we treat?</p>
+        <p class="text-center text-5xl font-extrabold my-5">What we treat?</p>
         <div
-          class="flex flex-wrap justify-center px-10 gap-10 md:gap-24 lg:px-24 lg:gap-28 xl:gap-20  h-[600px] overflow-y-auto"
+          class="flex flex-wrap justify-center px-10 gap-10 md:gap-24 lg:px-24 lg:gap-28 xl:gap-20  h-[600px] overflow-y-scroll scrollbar-none"
         >
           <div class="flex flex-col w-fit items-center">
-            <img src="./public/images/back-pain.svg" alt="back pain img" class="h-56 w-56" />
-            <p class="text-primary font-extrabold text-2xl">Back Pain</p>
+            <img src="./public/images/back-pain.svg" alt="back pain img" class="h-56 w-56 " />
+            <p class="text-primary font-extrabold text-3xl">Back Pain</p>
           </div>
           <div class="flex flex-col w-fit items-center">
             <img src="./public/images/neck-pain.svg" alt="neck pain img"  class="h-56 w-56" />
-            <p class="text-primary font-bold">Neck Pain</p>
+            <p class="text-primary font-extrabold text-3xl">Neck Pain</p>
           </div>
           <div class="flex flex-col w-fit items-center">
             <img
@@ -187,40 +191,40 @@
               alt="shoulder pain img"
               class="h-56 w-56" 
             />
-            <p class="text-primary font-bold">Shoulder Pain</p>
+            <p class="text-primary font-extrabold text-3xl">Shoulder Pain</p>
           </div>
           <div class="flex flex-col w-fit items-center">
             <img src="./public/images/hip-pain.svg" alt="hip pain img" class="h-56 w-56" />
-            <p class="text-primary font-bold">Hip Pain</p>
+            <p class="text-primary font-extrabold text-3xl">Hip Pain</p>
           </div>
           <div class="flex flex-col w-fit items-center">
             <img src="./public/images/knee-pain.svg" alt="knee pain img" class="h-56 w-56" />
-            <p class="text-primary font-bold">Knee Pain</p>
+            <p class="text-primary font-extrabold text-3xl">Knee Pain</p>
           </div>
           <div class="flex flex-col w-fit items-center">
             <img src="./public/images/ankle-pain.svg" alt="ankle pain img" class="h-56 w-56"  />
-            <p class="text-primary font-bold">Ankle Pain</p>
+            <p class="text-primary font-extrabold text-3xl">Ankle Pain</p>
           </div>
           <div class="flex flex-col w-fit items-center">
             <img src="./public/images/wrist-pain.svg" alt="wrist pain img" class="h-56 w-56"  />
-            <p class="text-primary font-bold">Wrist Pain</p>
+            <p class="text-primary font-extrabold text-3xl">Wrist Pain</p>
           </div>
           <div class="flex flex-col w-fit items-center">
             <img src="./public/images/foot-pain.svg" alt="foot pain img" class="h-56 w-56"  />
-            <p class="text-primary font-bold">Foot Pain</p>
+            <p class="text-primary font-extrabold text-3xl">Foot Pain</p>
           </div>
         </div>
       </section>
 
       <!-- about us -->
       <section class="my-10 py-5 lg:px-24">
-        <p class="text-center text-3xl font-bold my-5">About Us</p>
+        <p class="text-center text-5xl font-extrabold my-5">About Us</p>
         <div
           class="p-10 flex flex-col items-center lg:flex-row lg:max-w-6xl lg:mx-auto lg:gap-16"
         >
           <img src="./public/images/doctor-img.png" alt="doctor image" />
           <div class="text-primary flex flex-col gap-5">
-            <p class="text-xl font-bold">
+            <p class="text-xl text-center font-bold">
               A dedicated doctor with the core mission to help
             </p>
             <p>
@@ -244,31 +248,26 @@
      
 
 <section>
+  <h1 class="text-center text-5xl font-extrabold">REVIEWS</h1>
   <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
     <div class="swiper-container !overflow-hidden">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <blockquote class="bg-gray-100 p-8">
             <div class="flex items-center gap-4">
-              <img
-                alt="Dog"
-                src="https://images.unsplash.com/photo-1508280756091-9bdd7ef1f463?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1832&q=80"
-                class="h-16 w-16 rounded-full object-cover"
-              />
+              
 
-              <div class="text-sm">
-                <p class="font-medium">Bark Dagleish</p>
-                <p class="mt-1">Head of Barketing</p>
+              <div class="text-sm mx-auto">
+                <p class="font-medium ">Rohan Mishra</p>
               </div>
             </div>
 
             <p class="relative mt-4 text-gray-500">
               <span class="text-xl">&ldquo;</span>
 
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-              assumenda officiis sit amet itaque eveniet accusantium corporis
-              tempora, soluta perspiciatis rerum, ratione animi nemo inventore
-              repellat, commodi in esse quisquam.
+              I recently had the privilege of receiving treatment at the most exceptional physiotherapy center, 
+              and I cannot express my gratitude enough. From the moment I walked through their doors,
+               I was welcomed by a warm and friendly staff, setting the tone for the remarkable experience that followed.
 
               <span class="text-xl">&rdquo;</span>
             </p>
@@ -278,25 +277,18 @@
         <div class="swiper-slide">
           <blockquote class="bg-gray-100 p-8">
             <div class="flex items-center gap-4">
-              <img
-                alt="Dog"
-                src="https://images.unsplash.com/photo-1508280756091-9bdd7ef1f463?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1832&q=80"
-                class="h-16 w-16 rounded-full object-cover"
-              />
 
               <div class="text-sm">
-                <p class="font-medium">Bark Dagleish</p>
-                <p class="mt-1">Head of Barketing</p>
+                <p class="font-medium">Mohammad Vaish</p>
               </div>
             </div>
 
             <p class="relative mt-4 text-gray-500">
               <span class="text-xl">&ldquo;</span>
-
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-              assumenda officiis sit amet itaque eveniet accusantium corporis
-              tempora, soluta perspiciatis rerum, ratione animi nemo inventore
-              repellat, commodi in esse quisquam.
+              First and foremost, the team of physiotherapists at this center is beyond exceptional.
+               Their expertise and knowledge in the field are evident from the very first session. 
+               They took the time to thoroughly assess my condition, discussing my concerns and goals while tailoring a personalized treatment plan just for me. 
+             
 
               <span class="text-xl">&rdquo;</span>
             </p>
@@ -306,25 +298,19 @@
         <div class="swiper-slide">
           <blockquote class="bg-gray-100 p-8">
             <div class="flex items-center gap-4">
-              <img
-                alt="Dog"
-                src="https://images.unsplash.com/photo-1508280756091-9bdd7ef1f463?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1832&q=80"
-                class="h-16 w-16 rounded-full object-cover"
-              />
+              
 
               <div class="text-sm">
-                <p class="font-medium">Bark Dagleish</p>
-                <p class="mt-1">Head of Barketing</p>
+                <p class="font-medium">Suraj Singh</p>
+            
               </div>
             </div>
 
             <p class="relative mt-4 text-gray-500">
               <span class="text-xl">&ldquo;</span>
-
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-              assumenda officiis sit amet itaque eveniet accusantium corporis
-              tempora, soluta perspiciatis rerum, ratione animi nemo inventore
-              repellat, commodi in esse quisquam.
+              Throughout my entire rehabilitation journey, the physiotherapists displayed the utmost  patience and genuine care. 
+              They not only focused on treating my symptoms but also educated me about the root causes and preventive measures to ensure long-term well-being
+              Their passion for helping others  improve their quality of life.
 
               <span class="text-xl">&rdquo;</span>
             </p>
@@ -334,25 +320,19 @@
         <div class="swiper-slide">
           <blockquote class="bg-gray-100 p-8">
             <div class="flex items-center gap-4">
-              <img
-                alt="Dog"
-                src="https://images.unsplash.com/photo-1508280756091-9bdd7ef1f463?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1832&q=80"
-                class="h-16 w-16 rounded-full object-cover"
-              />
+              
 
               <div class="text-sm">
-                <p class="font-medium">Bark Dagleish</p>
-                <p class="mt-1">Head of Barketing</p>
+                <p class="font-medium">Geeta Pandey</p>
+                
               </div>
             </div>
 
             <p class="relative mt-4 text-gray-500">
               <span class="text-xl">&ldquo;</span>
-
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-              assumenda officiis sit amet itaque eveniet accusantium corporis
-              tempora, soluta perspiciatis rerum, ratione animi nemo inventore
-              repellat, commodi in esse quisquam.
+              The facilities at this physiotherapy center are state-of-the-art. The well-equipped therapy rooms and exercise areas provide a comfortable and conducive environment for rehabilitation.
+               The center's commitment to maintaining a clean and sanitized space is commendable, ensuring the utmost safety and hygiene for all patients
+             
 
               <span class="text-xl">&rdquo;</span>
             </p>
@@ -470,7 +450,7 @@
       slidesPerView: 1,
       spaceBetween: 8,
       autoplay: {
-        delay: 8000,
+        delay: 2000,
       },
       pagination: {
         el: '.swiper-pagination',

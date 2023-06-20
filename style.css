@@ -24,3 +24,6 @@
   color: #ffb600;
 }
 
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
