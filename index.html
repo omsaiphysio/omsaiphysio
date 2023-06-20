@@ -47,11 +47,10 @@
       class="flex justify-between p-3 bg-primary items-center text-white lg:px-24"
     >
       <!-- left section -->
-      <div class="flex items-center">
-        <img src="./public/images/logo.png" alt="logo" class="h-10" />
+      <div class="flex items-center space-x-2">
+        <img src="./public/images/cliniclogo-removebg-preview.png" alt="logo" class="lg:h-20 h-12" />
         <div>
-          <p>Om Sai</p>
-          <p class="font-bold">Physiotherapy</p>
+          <p class="font-extrabold lg:text-3xl text-xl">Om Sai Physiotherapy Clinic</p>
         </div>
       </div>
 
@@ -60,15 +59,9 @@
         <ul class="flex text-lg gap-10">
           <li><a href="/">Home</a></li>
           <li><a href="/">About Us</a></li>
+          <li><a href="/">Contact Us</a></li>
           <li><a href="/">Services</a></li>
-          <li>
-            <a href="/"
-              ><img
-                src="./public/images/lang-symbol.png"
-                alt="language symbol"
-                class="h-7"
-            /></a>
-          </li>
+          
           <li>
             <a href="/"
               ><img
@@ -108,16 +101,11 @@
           <li class="cursor-pointer w-full p-3 hover:bg-blue-900">
             <a href="/">Services</a>
           </li>
-
-          <li
-            class="cursor-pointer w-full p-3 hover:bg-blue-900 flex justify-center"
-          >
-            <img
-              src="./public/images/lang-symbol.png"
-              alt="language-symbol"
-              class="h-7"
-            />
+          <li class="cursor-pointer w-full p-3 hover:bg-blue-900">
+            <a href="/">Contact Us</a>
           </li>
+
+          
           <li
             class="cursor-pointer w-full p-3 hover:bg-blue-900 flex justify-center"
           >
@@ -147,9 +135,9 @@
             Unlock your body's full potential with Physiotherapy excellence
           </p>
           <button
-            class="w-fit mx-auto font-bold text-lg rounded bg-secondary px-6 py-1.5 text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-secondary-light hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-secondary-light active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+            class="w-fit  mx-auto lg:mx-0 font-bold text-lg rounded bg-secondary px-6 py-1.5 text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-secondary-light hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-secondary-light active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
           >
-            Book Now
+            Book An Appointment
           </button>
         </div>
 
@@ -274,7 +262,8 @@
 
           <div
             id="testimonials"
-            class="flex overflow-x-scroll overall-visible gap-10 px-10 lg:justify-center lg:gap-36"
+            class="flex overflow-x-scroll overall-visible gap-10 px-10 lg:justify-center lg:gap-36 overflow-x-auto "
+
           >
             <div
               class="bg-white rounded-xl p-7 shrink-0 w-56 flex flex-col gap-5 justify-between"
