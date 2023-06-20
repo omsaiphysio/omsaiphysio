@@ -16,6 +16,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- link to css -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"
@@ -50,7 +54,7 @@
       <div class="flex items-center space-x-2">
         <img src="./public/images/cliniclogo-removebg-preview.png" alt="logo" class="lg:h-20 h-12" />
         <div>
-          <p class="font-extrabold lg:text-3xl text-xl">Om Sai Physiotherapy Clinic</p>
+          <p class="font-bold lg:text-3xl text-xl mb-2">Om Sai Physiotherapy Clinic</p>
         </div>
       </div>
 
@@ -74,52 +78,38 @@
       </div>
 
       <!-- mobile menu -->
-
+       <div class="mb-2 " id="burger">
+        <div class="bg-white h-1 w-6 my-1 rounded-md " id="line1"></div>
+        <div class="bg-white h-1 w-6 my-1 rounded-md " id="line2"></div>
+        <div class="bg-white h-1 w-6 my-1 rounded-md " id="line3"></div>
+       </div>
+       <div class="hidden" id="closeburger">
+        <div class="bg-white h-1 w-7 -my-2 rounded-md rotate-45 " id="line1"></div>
+        <div class="bg-white h-1 w-7 my-1 rounded-md -rotate-45" id="line3"></div>
+       </div>
       <!-- Dropdown menu -->
-
-      <div id="menuToggle" class="w-fit flex flex-col justify-end md:hidden">
-        <input
-          type="checkbox"
-          class="flex w-[60px] h-[60px] absolute cursor-pointer opacity-0 z-[1]"
-          onclick="toggleMenu()"
-        />
-        <span id="span1"></span>
-        <span id="span2"></span>
-        <span id="span3"></span>
-      </div>
-      <!-- menu list -->
-      <div id="menu" class="absolute bg-primary right-0 top-16 w-1/2 hidden">
-        <ul
-          class="flex flex-col justify-center items-center text-lg w-full text-center py-10"
-        >
-          <li class="cursor-pointer w-full p-3 hover:bg-blue-900">
-            <a href="/">Home</a>
-          </li>
-          <li class="cursor-pointer w-full p-3 hover:bg-blue-900">
-            <a href="/">About Us</a>
-          </li>
-          <li class="cursor-pointer w-full p-3 hover:bg-blue-900">
-            <a href="/">Services</a>
-          </li>
-          <li class="cursor-pointer w-full p-3 hover:bg-blue-900">
-            <a href="/">Contact Us</a>
-          </li>
-
-          
-          <li
-            class="cursor-pointer w-full p-3 hover:bg-blue-900 flex justify-center"
-          >
-            <img
-              src="./public/images/location-symbol.png"
-              alt="language-symbol"
-              class="h-7"
-            />
+      <div class="absolute top-16 bg-menulist w-full left-0 flex items-center justify-center py-5 hidden" data-aos="fade-down" id="navlist">
+        <ul class="flex flex-col items-center space-y-2">
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Services</li>
+          <li>
+            <a href="/"
+              ><img
+                src="./public/images/location-symbol.png"
+                alt="location symbol"
+                class="h-7"
+            /></a>
           </li>
         </ul>
       </div>
+      
+      <!-- menu list -->
+      
     </nav>
 
-    <main class="bg-[#f8f1f1] py-10">
+    <main class="bg-[#d1e2e9] py-10">
       <!-- hero section -->
       <section
         class="flex flex-col-reverse gap-10 p-10 md:flex-row items-center justify-between lg:px-24 lg:pt-28"
@@ -181,41 +171,42 @@
       <section class="my-10 py-5 lg:px-24">
         <p class="text-center text-3xl font-bold my-5">What we treat?</p>
         <div
-          class="flex flex-wrap justify-center px-10 gap-10 md:gap-24 lg:px-24 lg:gap-28 xl:gap-36"
+          class="flex flex-wrap justify-center px-10 gap-10 md:gap-24 lg:px-24 lg:gap-28 xl:gap-20  h-[600px] overflow-y-auto"
         >
           <div class="flex flex-col w-fit items-center">
-            <img src="./public/images/back-pain.svg" alt="back pain img" />
-            <p class="text-primary font-bold">Back Pain</p>
+            <img src="./public/images/back-pain.svg" alt="back pain img" class="h-56 w-56" />
+            <p class="text-primary font-extrabold text-2xl">Back Pain</p>
           </div>
           <div class="flex flex-col w-fit items-center">
-            <img src="./public/images/neck-pain.svg" alt="neck pain img" />
+            <img src="./public/images/neck-pain.svg" alt="neck pain img"  class="h-56 w-56" />
             <p class="text-primary font-bold">Neck Pain</p>
           </div>
           <div class="flex flex-col w-fit items-center">
             <img
               src="./public/images/shoulder-pain.svg"
               alt="shoulder pain img"
+              class="h-56 w-56" 
             />
             <p class="text-primary font-bold">Shoulder Pain</p>
           </div>
           <div class="flex flex-col w-fit items-center">
-            <img src="./public/images/hip-pain.svg" alt="hip pain img" />
+            <img src="./public/images/hip-pain.svg" alt="hip pain img" class="h-56 w-56" />
             <p class="text-primary font-bold">Hip Pain</p>
           </div>
           <div class="flex flex-col w-fit items-center">
-            <img src="./public/images/knee-pain.svg" alt="knee pain img" />
+            <img src="./public/images/knee-pain.svg" alt="knee pain img" class="h-56 w-56" />
             <p class="text-primary font-bold">Knee Pain</p>
           </div>
           <div class="flex flex-col w-fit items-center">
-            <img src="./public/images/ankle-pain.svg" alt="ankle pain img" />
+            <img src="./public/images/ankle-pain.svg" alt="ankle pain img" class="h-56 w-56"  />
             <p class="text-primary font-bold">Ankle Pain</p>
           </div>
           <div class="flex flex-col w-fit items-center">
-            <img src="./public/images/wrist-pain.svg" alt="wrist pain img" />
+            <img src="./public/images/wrist-pain.svg" alt="wrist pain img" class="h-56 w-56"  />
             <p class="text-primary font-bold">Wrist Pain</p>
           </div>
           <div class="flex flex-col w-fit items-center">
-            <img src="./public/images/foot-pain.svg" alt="foot pain img" />
+            <img src="./public/images/foot-pain.svg" alt="foot pain img" class="h-56 w-56"  />
             <p class="text-primary font-bold">Foot Pain</p>
           </div>
         </div>
@@ -243,97 +234,137 @@
             <button
               class="w-fit font-bold text-lg rounded bg-secondary px-6 py-1.5 text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-secondary-light hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-secondary-light active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
             >
-              Book Now
+              Contact Now
             </button>
           </div>
         </div>
       </section>
 
       <!-- testimonials -->
-      <section class="mt-10 py-5 lg:px-24">
-        <p class="text-center text-3xl font-bold mb-3">Testimonials</p>
-        <p class="text-center">What Our Patients Say</p>
-        <div>
-          <img
-            src="./public/images/quote-symbol.png"
-            alt="quote-symbol"
-            class="rotate-180"
-          />
+     
 
-          <div
-            id="testimonials"
-            class="flex overflow-x-scroll overall-visible gap-10 px-10 lg:justify-center lg:gap-36 overflow-x-auto "
+<section>
+  <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+    <div class="swiper-container !overflow-hidden">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <blockquote class="bg-gray-100 p-8">
+            <div class="flex items-center gap-4">
+              <img
+                alt="Dog"
+                src="https://images.unsplash.com/photo-1508280756091-9bdd7ef1f463?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1832&q=80"
+                class="h-16 w-16 rounded-full object-cover"
+              />
 
-          >
-            <div
-              class="bg-white rounded-xl p-7 shrink-0 w-56 flex flex-col gap-5 justify-between"
-            >
-              <p class="text-center font-bold">
-                Expert care, incredible results! This physiotherapy centre is
-                simply outstanding
-              </p>
-              <div class="flex items-center gap-3">
-                <img
-                  src="./public/images/doctor-img.png"
-                  alt="user image"
-                  class="h-14"
-                />
-                <div class="text-primary font-bold">
-                  <p>NAME</p>
-                  <p>Patient 01</p>
-                </div>
+              <div class="text-sm">
+                <p class="font-medium">Bark Dagleish</p>
+                <p class="mt-1">Head of Barketing</p>
               </div>
             </div>
 
-            <div
-              class="bg-white rounded-xl p-7 shrink-0 w-56 flex flex-col gap-5 justify-between"
-            >
-              <p class="text-center font-bold">
-                Top-notch professionals, personalised treatment. The best choice
-                for effective physiotherapy.
-              </p>
-              <div class="flex items-center gap-3">
-                <img
-                  src="./public/images/doctor-img.png"
-                  alt="user image"
-                  class="h-14"
-                />
-                <div class="text-primary font-bold">
-                  <p>NAME</p>
-                  <p>Patient 01</p>
-                </div>
-              </div>
-            </div>
+            <p class="relative mt-4 text-gray-500">
+              <span class="text-xl">&ldquo;</span>
 
-            <div
-              class="bg-white rounded-xl p-7 shrink-0 w-56 flex flex-col gap-5 justify-between"
-            >
-              <p class="text-center font-bold">
-                Warm, supportive atmosphere, remarkable outcomes. Highly
-                recommend this centre.
-              </p>
-              <div class="flex items-center gap-3">
-                <img
-                  src="./public/images/doctor-img.png"
-                  alt="user image"
-                  class="h-14"
-                />
-                <div class="text-primary font-bold">
-                  <p>NAME</p>
-                  <p>Patient 01</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex justify-end">
-            <img
-              src="./public/images/quote-symbol.png"
-              alt="quote-symbol"
-              class="rounded-full"
-            />
-          </div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              assumenda officiis sit amet itaque eveniet accusantium corporis
+              tempora, soluta perspiciatis rerum, ratione animi nemo inventore
+              repellat, commodi in esse quisquam.
+
+              <span class="text-xl">&rdquo;</span>
+            </p>
+          </blockquote>
         </div>
-      </section>
+
+        <div class="swiper-slide">
+          <blockquote class="bg-gray-100 p-8">
+            <div class="flex items-center gap-4">
+              <img
+                alt="Dog"
+                src="https://images.unsplash.com/photo-1508280756091-9bdd7ef1f463?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1832&q=80"
+                class="h-16 w-16 rounded-full object-cover"
+              />
+
+              <div class="text-sm">
+                <p class="font-medium">Bark Dagleish</p>
+                <p class="mt-1">Head of Barketing</p>
+              </div>
+            </div>
+
+            <p class="relative mt-4 text-gray-500">
+              <span class="text-xl">&ldquo;</span>
+
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              assumenda officiis sit amet itaque eveniet accusantium corporis
+              tempora, soluta perspiciatis rerum, ratione animi nemo inventore
+              repellat, commodi in esse quisquam.
+
+              <span class="text-xl">&rdquo;</span>
+            </p>
+          </blockquote>
+        </div>
+
+        <div class="swiper-slide">
+          <blockquote class="bg-gray-100 p-8">
+            <div class="flex items-center gap-4">
+              <img
+                alt="Dog"
+                src="https://images.unsplash.com/photo-1508280756091-9bdd7ef1f463?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1832&q=80"
+                class="h-16 w-16 rounded-full object-cover"
+              />
+
+              <div class="text-sm">
+                <p class="font-medium">Bark Dagleish</p>
+                <p class="mt-1">Head of Barketing</p>
+              </div>
+            </div>
+
+            <p class="relative mt-4 text-gray-500">
+              <span class="text-xl">&ldquo;</span>
+
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              assumenda officiis sit amet itaque eveniet accusantium corporis
+              tempora, soluta perspiciatis rerum, ratione animi nemo inventore
+              repellat, commodi in esse quisquam.
+
+              <span class="text-xl">&rdquo;</span>
+            </p>
+          </blockquote>
+        </div>
+
+        <div class="swiper-slide">
+          <blockquote class="bg-gray-100 p-8">
+            <div class="flex items-center gap-4">
+              <img
+                alt="Dog"
+                src="https://images.unsplash.com/photo-1508280756091-9bdd7ef1f463?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1832&q=80"
+                class="h-16 w-16 rounded-full object-cover"
+              />
+
+              <div class="text-sm">
+                <p class="font-medium">Bark Dagleish</p>
+                <p class="mt-1">Head of Barketing</p>
+              </div>
+            </div>
+
+            <p class="relative mt-4 text-gray-500">
+              <span class="text-xl">&ldquo;</span>
+
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              assumenda officiis sit amet itaque eveniet accusantium corporis
+              tempora, soluta perspiciatis rerum, ratione animi nemo inventore
+              repellat, commodi in esse quisquam.
+
+              <span class="text-xl">&rdquo;</span>
+            </p>
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="swiper-pagination !relative !bottom-0 mt-12"></div>
+    </div>
+  </div>
+</section>
+
 
       <!-- get in touch form -->
       <div
@@ -427,4 +458,48 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
     <script src="./script.js"></script>
   </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    new Swiper('.swiper-container', {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 8,
+      autoplay: {
+        delay: 8000,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1.5,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+    })
+  })
+  const burger = document.getElementById('burger')
+  const navlist = document.getElementById('navlist') 
+  const closeburger = document.getElementById('closeburger') 
+  burger.addEventListener('click',()=>
+  {
+     navlist.style.display='flex'
+     burger.style.display='none'
+     closeburger.style.display='block'
+  })
+  closeburger.addEventListener('click',()=>{
+    navlist.style.display='none'
+    closeburger.style.display='none'
+    burger.style.display='block'
+  })
+  
+</script>
 </html>

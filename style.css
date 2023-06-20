@@ -1,11 +1,13 @@
 * {
   font-family: "Noto Sans", sans-serif;
-  overflow-x: hidden;
 }
 
 /* bg colors */
 .bg-primary {
   background-color: #051777;
+}
+.bg-menulist {
+  background-color: rgba(5, 23, 119,0.7);
 }
 .bg-secondary {
   background-color: #ffb600;
@@ -22,52 +24,3 @@
   color: #ffb600;
 }
 
-
-/* scrollbar */
-#testimonials::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-#testimonials {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-
-/* ..................hamburger menu..................  */
-#menuToggle span {
-  width: 30px;
-  height: 4px;
-  margin-bottom: 6px;
-  background: #dbdbdb;
-  border-radius: 10px;
-  -webkit-transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
-  -moz-transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
-  -ms-transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
-  -o-transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
-  transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
-}
-
-#span1 {
-  transform-origin: 4px 0px;
-}
-
-#span3 {
-  transform-origin: bottom right;
-}
-
-#menuToggle input:checked ~ #span1 {
-  background-color: #d3d3d5;
-  transform: rotate(45deg) translate(8px);
-}
-
-#menuToggle input:checked ~ #span2 {
-  background-color: #d3d3d5;
-  transform: rotate(495deg) translate(4px);
-}
-
-#menuToggle input:checked ~ #span3 {
-  background-color: #d3d3d5;
-  transform: rotate(45deg);
-  opacity: 0;
-}
