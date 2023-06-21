@@ -1,7 +1,11 @@
 * {
   font-family: "Noto Sans", sans-serif;
+  scroll-behavior: smooth;
 }
-
+.bg-card-services
+{
+  background: linear-gradient(to bottom, #f04d99 0%, #008aca 100%);
+}
 /* bg colors */
 .bg-primary {
   background-color: #051777;
@@ -26,4 +30,8 @@
 
 .scrollbar-none::-webkit-scrollbar {
   display: none;
+}
+
+.bg-try{
+  background: linear-gradient(to bottom, #f833ff 0%, #1c10c5 100%);
 }

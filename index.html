@@ -62,9 +62,9 @@
       <div class="hidden md:block">
         <ul class="flex text-lg gap-10">
           <li><a href="/">Home</a></li>
-          <li><a href="/">About Us</a></li>
-          <li><a href="/">Contact Us</a></li>
-          <li><a href="/">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#services">Services</a></li>
           
           <li>
             <a href="/"
@@ -90,10 +90,10 @@
       <!-- Dropdown menu -->
       <div class="absolute top-16 bg-menulist w-full left-0 flex items-center justify-center py-5 hidden" data-aos="fade-down" id="navlist">
         <ul class="flex flex-col items-center space-y-2">
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
-          <li>Services</li>
+          <li><a href="/">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#services">Services</a></li>
           <li>
             <a href="/"
               ><img
@@ -138,13 +138,13 @@
       </section>
 
       <!-- services -->
-      <section class="my-10 py-5 lg:px-24">
+      <section class="my-10 py-5 lg:px-24" id="services">
         <p class="text-center text-5xl font-extrabold my-10">Services</p>
         <div
-          class="flex flex-wrap gap-10 justify-evenly  text-primary  lg:justify-center lg:gap-24"
+          class="flex flex-wrap gap-10 justify-evenly  text-primary  lg:justify-evenly lg:gap-24"
         >
         <div
-        class="bg-white w-72 h-72  rounded-2xl flex flex-col items-center justify-center gap-5 hover:shadow-xl hover:shadow-[#ffb600] lg:h-96 lg:w-96 "
+        class="bg-card-services w-72 h-72  rounded-2xl flex flex-col items-center justify-center gap-5 hover:shadow-xl hover:shadow-[#ffb600] lg:h-96 lg:w-96  "
       >
           <div class="bg-[#8ddbbbf5] rounded-lg lg:w-72 mx-auto">
             <img
@@ -153,11 +153,11 @@
               class="h-44 lg:h-56"
             />
           </div>
-            <p class="font-extrabold text-2xl">Clinic Treatment</p>
+            <p class="font-extrabold text-2xl text-white">Clinic Treatment</p>
           </div>
 
           <div
-            class="bg-white w-72 h-72  rounded-2xl flex flex-col items-center justify-center gap-5 hover:shadow-xl hover:shadow-[#ffb600] lg:h-96 lg:w-96 "
+            class="bg-card-services w-72 h-72  rounded-2xl flex flex-col items-center justify-center gap-5 hover:shadow-xl hover:shadow-[#ffb600] lg:h-96 lg:w-96 "
           >
           <div class="bg-[#8ddbbbf5] rounded-lg lg:w-72 mx-auto">
             <img
@@ -166,7 +166,7 @@
               class="h-44 lg:h-56"
             />
           </div>
-            <p class="font-extrabold text-2xl">Home Visit</p>
+            <p class="font-extrabold text-2xl text-white">Home Visit</p>
           </div>
         </div>
       </section>
@@ -175,49 +175,49 @@
       <section class="my-10 py-5 lg:px-24">
         <p class="text-center text-5xl font-extrabold my-5">What we treat?</p>
         <div
-          class="flex flex-wrap justify-center px-10 gap-10 md:gap-24 lg:px-24 lg:gap-28 xl:gap-20  h-[600px] overflow-y-scroll scrollbar-none"
+          class="flex flex-wrap justify-evenly px-10 gap-10 md:gap-24 lg:px-24 lg:gap-28 xl:gap-20  h-[600px] overflow-y-scroll scrollbar-none"
         >
           <div class="flex flex-col w-fit items-center">
-            <img src="./public/images/back-pain.svg" alt="back pain img" class="h-56 w-56 " />
+            <img src="./public/images/back-pain.jpg" alt="back pain img" class="h-56 w-56 rounded-full " />
             <p class="text-primary font-extrabold text-3xl">Back Pain</p>
           </div>
           <div class="flex flex-col w-fit items-center">
-            <img src="./public/images/neck-pain.svg" alt="neck pain img"  class="h-56 w-56" />
+            <img src="./public/images/Neck-Pain-1.jpg" alt="neck pain img"  class="h-56 w-56 rounded-full" />
             <p class="text-primary font-extrabold text-3xl">Neck Pain</p>
           </div>
           <div class="flex flex-col w-fit items-center">
             <img
-              src="./public/images/shoulder-pain.svg"
+              src="./public/images/shoulder-pain.png"
               alt="shoulder pain img"
-              class="h-56 w-56" 
+              class="h-56 w-56 rounded-full" 
             />
             <p class="text-primary font-extrabold text-3xl">Shoulder Pain</p>
           </div>
           <div class="flex flex-col w-fit items-center">
-            <img src="./public/images/hip-pain.svg" alt="hip pain img" class="h-56 w-56" />
+            <img src="./public/images/hip-pain.webp" alt="hip pain img" class="h-56 w-56 rounded-full" />
             <p class="text-primary font-extrabold text-3xl">Hip Pain</p>
           </div>
           <div class="flex flex-col w-fit items-center">
-            <img src="./public/images/knee-pain.svg" alt="knee pain img" class="h-56 w-56" />
+            <img src="./public/images/knee-pain-1.webp" alt="knee pain img" class="h-56 w-56 rounded-full" />
             <p class="text-primary font-extrabold text-3xl">Knee Pain</p>
           </div>
           <div class="flex flex-col w-fit items-center">
-            <img src="./public/images/ankle-pain.svg" alt="ankle pain img" class="h-56 w-56"  />
+            <img src="./public/images/ankle pain.jpg" alt="ankle pain img" class="h-56 w-56 rounded-full"  />
             <p class="text-primary font-extrabold text-3xl">Ankle Pain</p>
           </div>
           <div class="flex flex-col w-fit items-center">
-            <img src="./public/images/wrist-pain.svg" alt="wrist pain img" class="h-56 w-56"  />
+            <img src="./public/images/wrist-pain.jpg" alt="wrist pain img" class="h-56 w-56 rounded-full"  />
             <p class="text-primary font-extrabold text-3xl">Wrist Pain</p>
           </div>
           <div class="flex flex-col w-fit items-center">
-            <img src="./public/images/foot-pain.svg" alt="foot pain img" class="h-56 w-56"  />
+            <img src="./public/images/foot-pain.jpg" alt="foot pain img" class="h-56 w-56 rounded-full"  />
             <p class="text-primary font-extrabold text-3xl">Foot Pain</p>
           </div>
         </div>
       </section>
 
       <!-- about us -->
-      <section class="my-10 py-5 lg:px-24">
+      <section class="my-10 py-5 lg:px-24" id="about">
         <p class="text-center text-5xl font-extrabold my-5">About Us</p>
         <div
           class="p-10 flex flex-col items-center lg:flex-row lg:max-w-6xl lg:mx-auto lg:gap-16"
@@ -248,7 +248,7 @@
      
 
 <section>
-  <h1 class="text-center text-5xl font-extrabold">REVIEWS</h1>
+  <h1 class="text-center text-5xl font-extrabold" id="review">REVIEWS</h1>
   <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
     <div class="swiper-container !overflow-hidden">
       <div class="swiper-wrapper">
@@ -344,59 +344,67 @@
     </div>
   </div>
 </section>
+<section class="my-20 ">
+  <h1 class="font-extrabold text-center text-5xl my-10" id="contact">Contact Us</h1>
+  <h1 class="font-extrabold text-center text-3xl my-10">Our Branches</h1>
+  <div class="flex lg:flex-row flex-col lg:justify-evenly px-10 space-y-10 lg:space-y-0">
+    <div class="flex flex-col justify-center items-center bg-try px-5 py-10 rounded-lg shadow-2xl lg:h-96 lg:w-96">
+      <img src="./public/images/clinicimage.jpg" class="h-56 w-56">
+      <h1 class="text-white text-xl text-center my-2">Near Cotton Mill Tiraha Naini Prayagraj</h1>
+      <div class="flex flex-row space-x-5 items-center">
+        <img src="./public/images/call-icon-removebg-preview.png" class="h-14 w-14">
+        <img src="./public/images/icons8-location-64.png" class="h-10 w-10">
+        <img src="./public/images/wa-icon-removebg-preview.png" class="h-14 w-14">
 
-
-      <!-- get in touch form -->
-      <div
-        class="bg-primary m-5 mb-0 rounded-lg p-10 text-center sm:px-24 w-fit md:mx-auto"
-      >
-        <p class="text-2xl font-bold text-white">
-          Get in touch to book you first appointment
-        </p>
-        <p class="mt-2 text-white">
-          Booking an appointment is quick and simple
-        </p>
-        <form method="POST" class="flex flex-col gap-5 mt-10 lg:flex-row">
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Enter your name"
-            class="rounded-lg border-none"
-          />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Enter your email"
-            class="rounded-lg border-none"
-          />
-          <button
-            type="submit"
-            class="bg-white rounded-lg py-2 px-5 font-bold w-fit self-end"
-          >
-            Send
-          </button>
-        </form>
       </div>
+    </div>
+
+    <div class="flex flex-col justify-center items-center bg-try px-5 py-10 rounded-lg shadow-2xl lg:h-96 lg:w-96">
+      <img src="./public/images/clinicimage.jpg" class="h-56 w-56">
+      <h1 class=" text-xl text-center my-2 text-white">Near Dreams Honda Angency Physio Gali Naini Prayagraj</h1>
+      <div class="flex flex-row space-x-5 items-center">
+        <img src="./public/images/call-icon-removebg-preview.png" class="h-14 w-14">
+        <img src="./public/images/icons8-location-64.png" class="h-10 w-10">
+        <img src="./public/images/wa-icon-removebg-preview.png" class="h-14 w-14">
+
+      </div>
+    </div>
+
+    <div class="flex flex-col justify-center items-center bg-try px-5 py-10 rounded-lg shadow-2xl lg:h-96 lg:w-96">
+      <img src="./public/images/clinicimage.jpg" class="h-56 w-56">
+      <h1 class="text-xl text-center my-2 text-white">In Front of LIC Office Meja Road Prayagraj</h1>
+      <div class="flex flex-row space-x-5 items-center">
+        <img src="./public/images/call-icon-removebg-preview.png" class="h-14 w-14">
+        <img src="./public/images/icons8-location-64.png" class="h-10 w-10">
+        <img src="./public/images/wa-icon-removebg-preview.png" class="h-14 w-14">
+
+      </div>
+    </div>
+   
+    
+
+
+  </div>
+</section>
+
+      
     </main>
 
     <!-- ........footer.......... -->
     <footer
       class="bg-primary text-white flex flex-wrap justify-evenly p-10 gap-10 md:text-lg"
     >
-      <div class="flex">
-        <img src="./public/images/logo.png" alt="logo" class="h-10" />
+      <div class="flex items-center space-x-2">
+        <img src="./public/images/cliniclogo-removebg-preview.png" alt="logo" class="lg:h-24 lg:w-24 h-12 w-12" />
         <div>
-          <p>Om Sai</p>
-          <p class="font-bold">Physiotherapy</p>
+          <p class="font-extrabold lg:text-3xl text-xl">Om Sai Physiotherapy Center</p>
         </div>
       </div>
       <div>
         <ul class="flex flex-col gap-2">
-          <li>About Us</li>
-          <li>Blog</li>
-          <li>FAQ</li>
+          <a href="#about"><li>About Us</li></a>
+          <a href="#contact"><li>Contact Us</li></a>
+          <a href="#services"><li>Services</li></a>
         </ul>
       </div>
 
@@ -404,9 +412,9 @@
         <ul class="flex flex-col gap-2">
           <li class="flex gap-1">
             <img src="./public/images/email-symbol.png" alt="" />
-            <p>Email</p>
+            <p>Email Us: omsaiphysio@gmail.com</p>
           </li>
-          <li class="flex flex-col gap-2">
+          <li class="flex flex-row gap-2">
             Follow Us
             <div class="flex gap-1">
               <img
@@ -417,11 +425,6 @@
               <img
                 src="./public/images/twitter-symbol.png"
                 alt="twitter symbol"
-                class="h-5 lg:h-7"
-              />
-              <img
-                src="./public/images/linkedin-symbol.svg"
-                alt="linkedin symbol"
                 class="h-5 lg:h-7"
               />
               <img
